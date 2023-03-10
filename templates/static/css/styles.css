@@ -61,10 +61,6 @@ header nav a {
     color: rgb(107, 105, 105);
 }
 
-.container {
-    padding: 0 250px 0 250px;
-}
-
 /* Recipe card styles */
 .recipe-cards {
     display: flex;

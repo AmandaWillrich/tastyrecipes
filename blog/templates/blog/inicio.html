@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    <main>
+<main>
+    <div class="container">
         <section class="recipe-cards">
             <article>
-                <img src="https://unsplash.it/640/425?recipe?1" alt="Recipe Image">
+                <img src="https://unsplash.it/640/425?random?1" alt="Recipe Image">
                 <h2>Recipe Title</h2>
                 <p>Recipe description goes here.</p>
-                <a href="{% url 'receita' %}">Read More</a>
+                <a href="#">Read More</a>
             </article>
             <article>
                 <img src="https://unsplash.it/640/425?random?2" alt="Recipe Image">
@@ -20,7 +20,7 @@
             <article>
                 <img src="https://unsplash.it/640/425?random?3" alt="Recipe Image">
                 <h2>Recipe Title</h2>
-                <p>Recipe description goes here.</p>
+                <p>Recipe description goes dhere.</p>
                 <a href="#">Read More</a>
             </article>
             <article>
@@ -29,19 +29,7 @@
                 <p>Recipe description goes here.</p>
                 <a href="#">Read More</a>
             </article>
-            <article>
-                <img src="https://unsplash.it/640/425?random?5" alt="Recipe Image">
-                <h2>Recipe Title</h2>
-                <p>Recipe description goes here.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <img src="https://unsplash.it/640/425?random?6" alt="Recipe Image">
-                <h2>Recipe Title</h2>
-                <p>Recipe description goes here.</p>
-                <a href="#">Read More</a>
-            </article>
         </section>
-    </main>
-</div>
+    </div>
+</main>
 {% endblock %}
