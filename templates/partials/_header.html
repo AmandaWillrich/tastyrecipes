@@ -11,10 +11,10 @@
     <h1>As Melhores Receitas em Apenas um Lugar</h1>
     <nav>
         <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="{% url 'blog-home' %}">Início</a></li>
+            <li><a href="{% url 'categorias' %}">Categorias</a></li>
+            <li><a href="{% url 'sobre' %}">Sobre</a></li>
+            <li><a href="{% url 'contato' %}">Contato</a></li>
         </ul>
     </nav>
 </header>
