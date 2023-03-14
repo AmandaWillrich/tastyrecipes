@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'blog/inicio.html', context)
 
 
-def recipe(request):
+def recipe(request, pk):
     return render(request, 'blog/receita.html')
 
 

@@ -4,32 +4,16 @@
 {% block content %}
 <main>
     <div class="container">
+        {% for post in posts %}
         <section class="recipe-cards">
             <article>
-                <img src="https://unsplash.it/640/425?random?1" alt="Recipe Image">
-                <h2>Recipe Title</h2>
-                <p>Recipe description goes here.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <img src="https://unsplash.it/640/425?random?2" alt="Recipe Image">
-                <h2>Recipe Title</h2>
-                <p>Recipe description goes here.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <img src="https://unsplash.it/640/425?random?3" alt="Recipe Image">
-                <h2>Recipe Title</h2>
-                <p>Recipe description goes dhere.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <img src="https://unsplash.it/640/425?random?4" alt="Recipe Image">
-                <h2>Recipe Title</h2>
-                <p>Recipe description goes here.</p>
-                <a href="#">Read More</a>
+                <img src="{{ post.image.url }}" alt="{{ post.description }}">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.description }}</p>
+                <a href="receita/{{ post.id}}">Read More</a>
             </article>
         </section>
+        {% endfor %}
     </div>
 </main>
 {% endblock %}
