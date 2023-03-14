@@ -9,12 +9,11 @@ a {
     text-decoration: none;
 }
 
-
 img {
     max-width: 100%;
-    max-height: 100%;
 }
- 
+
+/* Header styles */
 header {
     background-color: #f8f8f8;
     padding: 20px;
@@ -60,13 +59,14 @@ header nav a {
     padding: 10px;
 }
 
+
 .menu li a:hover, .login li a:hover {
     color: rgb(107, 105, 105);
 }
 
+/* Recipe card styles */
 .recipe-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
@@ -89,12 +89,15 @@ header nav a {
 }
 
 .recipe-cards article h2 {
+    padding-top: 8px;
     margin: 10px;
     font-size: 24px;
     font-weight: bold;
 }
 
 .recipe-cards article p {
+    height: 62px;
+    padding-top: 8px;
     margin: 10px;
     font-size: 16px;
 }

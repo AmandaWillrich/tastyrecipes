@@ -4,16 +4,16 @@
 {% block content %}
 <main>
     <div class="container">
-        {% for post in posts %}
         <section class="recipe-cards">
+            {% for post in posts %}
             <article>
                 <img src="{{ post.image.url }}" alt="{{ post.description }}">
                 <h2>{{ post.title }}</h2>
                 <p>{{ post.description }}</p>
-                <a href="receita/{{ post.id}}">Read More</a>
+                <a href="receita/{{ post.id}}">Receita Completa</a>
             </article>
+            {% endfor %}
         </section>
-        {% endfor %}
     </div>
 </main>
 {% endblock %}
